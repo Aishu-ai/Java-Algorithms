@@ -2,11 +2,11 @@ import java.lang.Math;
 import java.util.*;
 
 public class PercolationStats extends Percolation{
-	private double[] res;
-	private int T;
+	private double[] res;//to store p* from each trial
+	private int T;//no. of trials
 	
 	public PercolationStats(int n,int trials){
-		super(n);
+		super(1);//initialzing the parent constructor
 		if(n<=0||trials<=0)
 		throw new IllegalArgumentException(" not valid");
 		else{
@@ -15,9 +15,11 @@ public class PercolationStats extends Percolation{
 		
 		for(int i=0;i<trials;i++){
 			res[i]=result(n);
+			//Storing the results
 		}
 	}
 	}
+	//Opens the sites randomly until the grid percolates and returns the fraction of open sites
 	private double result(int n){
 		Percolation per=new Percolation(n);
 		Random rand=new Random(System.currentTimeMillis());
@@ -31,7 +33,7 @@ public class PercolationStats extends Percolation{
 	
 			
 		}
-		
+		//Mean of all fractions obtained which gives us a good estimation of p* (the threshold)
 	public double mean(){
 		double m=0;
 		for(double x:res)
@@ -48,10 +50,12 @@ public class PercolationStats extends Percolation{
 		m=Math.sqrt(m);
 		return m;
 	}
+	// low endpoint of 95% confidence interval
 	public double confidenceLo(){
 		double lo=this.mean()-1.96*this.stddev()/Math.sqrt(T);
 		return lo;
 	}
+	// high endpoint of 95% confidence interval
 	public double confidenceHi(){
 		double lo=this.mean()+1.96*this.stddev()/Math.sqrt(T);
 		return lo;

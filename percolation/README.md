@@ -13,7 +13,7 @@ In other words, a system percolates if we fill all open sites connected to the t
 to bottom, with full sites conducting. For the porous substance example, the open sites correspond to empty space through which water might flow, so that a 
 system that percolates lets water fill open sites, flowing from top to bottom.) 
 **************************
-https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolates-yes.png //
+https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolates-yes.png
 https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolates-no.png
 See the above images for more insight.
 ***********************************
@@ -28,6 +28,18 @@ https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-thre
 When n is sufficiently large, there is a threshold value p* such that when p < p* a random n-by-n grid almost never percolates, and when p > p*,
 a random n-by-n grid almost always percolates. No mathematical solution for determining the percolation threshold p* has yet been derived. We estimate the threshold
 using the following simulation.
+
+MONTE CARLO SIMULATION
+To estimate the percolation threshold, consider the following computational experiment:
+a.Initialize all sites to be blocked.<br/>
+
+b.Repeat the following until the system percolates</br>
+
+  1.Choose a site uniformly at random among all blocked sites.</br>
+
+  2.Open the site. </br>
+
+c.The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold. </br>
 
 
 

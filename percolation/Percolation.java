@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Percolation extends QuickUnionUF{
-	//Array to track status either closed 'c' or open 'd' of the sites
+	//Array to track status either closed 'c' or open 'o' of the sites
 	private char[]status;
 	//Size of the grid i.e n
 	private int size;
@@ -117,7 +117,7 @@ class QuickUnionUF{
 	public boolean connected(int p,int q){
 		return(root(p)==root(q));
 	}
-	//combining trees( weighted implementation..parent node dependd upon the size of th trees being joined)
+	//combining trees( weighted implementation..parent node depends upon the size of the trees being joined)
 	public void union(int p,int q){
 		int i=root(p);
 		int j=root(q);

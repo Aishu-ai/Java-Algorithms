@@ -1,19 +1,23 @@
 import java.util.*;
 
 public class Percolation extends QuickUnionUF{
+	//Array to track status either closed 'c' or open 'd' of the sites
 	private char[]status;
+	//Size of the grid i.e n
 	private int size;
 	
-	
+	//Parametrized constructor
 	public Percolation(int n){
-		super(n*n+2);
-		//System.out.println("Hi");
+		super(n*n+2);//Creating an array of size n*n+2
+		//+2 as we will connect the 0th node to all the nodes in the first row and n+1th node to all the nodes in the last row
+		//so the problem effectively becomes value of connected(0,n+1).if its true it percolates
 		if(n<=0)
 		throw new IllegalArgumentException(" not valid");
 		else{
 		size=n;
 		int num=n*n+2;
 		status=new char[size*size];
+			//Initailaizing status to closed
 		for(int i=0;i<num-2;i++){
 			status[i]='c';
 		}
@@ -23,6 +27,7 @@ public class Percolation extends QuickUnionUF{
 		}
 	}
 	}
+	//Opening a site
 	public void open(int row, int col){
 		if(row<1||row>size)
 		throw new IllegalArgumentException(" invalid row index");
@@ -32,6 +37,7 @@ public class Percolation extends QuickUnionUF{
 			
 		int index=(row-1)*size+(col-1);
 		status[index]='o';
+		//If any of its adjacent sites are open join them...	
 		if(index>=1 && status[index-1]=='o')
 		union(index,index+1);
 		if(index<size*size-1 && status[index+1]=='o')
@@ -53,6 +59,7 @@ public class Percolation extends QuickUnionUF{
 		return(status[index]=='o');
 	}
 	}
+	//A site is full if its connected to the top row i.e the first row or to the 0th node
 	public boolean isFull(int row, int col){
 		if(row<1||row>size)
 		throw new IllegalArgumentException(" invalid row index");
@@ -81,21 +88,15 @@ public class Percolation extends QuickUnionUF{
 	
 	
 	}
+\\Using the weighted Quick union method.Modelling the n*n boxes as n*n objects and considering them to be connected when there are adjacent full boxes.
+\\We implement a forest i.e a set of trees where if id[i]=i, then i is the root of the tree	
+	
 			
-		
-		
-		
-	
-	
-	
-
-
-
 class QuickUnionUF{
-	private int[]id;
-	private int[]sz;
+	private int[]id;//where id[i] is the parent of i
+	private int[]sz;//sz[i] gives no. of objects in tree rooted at i
 	
-	
+	//parametrized constructor
 	public QuickUnionUF(int N){
 		id=new int[N];
 		sz=new int[N];
@@ -104,6 +105,7 @@ class QuickUnionUF{
 			sz[i]=0;
 	}
 }
+	//To find root(using path compression..keeping the tree almost flat)
 	private int root(int i){
 		while(i!=id[i]){
 			id[i]=id[id[i]];
@@ -111,9 +113,11 @@ class QuickUnionUF{
 		}
 		return i;
 	}
+	//if p and q belong to the same tree
 	public boolean connected(int p,int q){
 		return(root(p)==root(q));
 	}
+	//combining trees( weighted implementation..parent node dependd upon the size of th trees being joined)
 	public void union(int p,int q){
 		int i=root(p);
 		int j=root(q);

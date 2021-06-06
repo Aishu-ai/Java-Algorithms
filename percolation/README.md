@@ -1,4 +1,4 @@
-PERCOLATION
+PERCOLATION (USES WQUPC)--Weighted QuickUnion Path Compression alogorithm
 *****************************
 Given a composite systems comprised of randomly distributed insulating and metallic materials: what fraction of the materials need to be metallic so that the
 composite system is an electrical conductor? Given a porous landscape with water on the surface (or oil below), under what conditions will the water be able to 

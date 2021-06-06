@@ -22,15 +22,15 @@ THE PROBLEM
 In a famous scientific problem, researchers are interested in the following question: if sites are independently set to be open with probability p
 (and therefore blocked with probability 1 − p), what is the probability that the system percolates? When p equals 0, the system does not percolate; when p equals 1,
 the system percolates. The plots (in the links given below) show the site vacancy probability p versus the percolation probability for 20-by-20 random grid and 
-100-by-100 random grid.
-https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-threshold20.png  (for 20-by-20 random grid)
-https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-threshold100.png  (for 100-ny-100 random grid)
+100-by-100 random grid.</br>
+https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-threshold20.png  (for 20-by-20 random grid)</br>
+https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-threshold100.png  (for 100-ny-100 random grid)</br>
 When n is sufficiently large, there is a threshold value p* such that when p < p* a random n-by-n grid almost never percolates, and when p > p*,
-a random n-by-n grid almost always percolates. No mathematical solution for determining the percolation threshold p* has yet been derived. We estimate the threshold
-using the following simulation.
+a random n-by-n grid almost always percolates. No mathematical solution for determining the percolation threshold p* has yet been derived. We estimate the threshold using the following simulation.
 
 MONTE CARLO SIMULATION
-To estimate the percolation threshold, consider the following computational experiment:
+***********************************
+To estimate the percolation threshold, consider the following computational experiment:</br>
 a.Initialize all sites to be blocked.<br/>
 
 b.Repeat the following until the system percolates</br>

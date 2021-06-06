@@ -88,8 +88,8 @@ public class Percolation extends QuickUnionUF{
 	
 	
 	}
-\\Using the weighted Quick union method.Modelling the n*n boxes as n*n objects and considering them to be connected when there are adjacent full boxes.
-\\We implement a forest i.e a set of trees where if id[i]=i, then i is the root of the tree	
+//Using the weighted Quick union method.Modelling the n*n boxes as n*n objects and considering them to be connected when there are adjacent full boxes.
+//We implement a forest i.e a set of trees where if id[i]=i, then i is the root of the tree	
 	
 			
 class QuickUnionUF{

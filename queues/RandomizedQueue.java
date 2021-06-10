@@ -56,6 +56,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>{
 		n--;
 		return item;
 	}
+	//finding the ith entry in the queue
 	private Node find(int i){
 		int j=0;
 		Node current=first;
@@ -67,11 +68,13 @@ public class RandomizedQueue<Item> implements Iterable<Item>{
 		}
 		return current;
 	}
+	//swapping array elements
 	private void swap(int arr[],int i,int j){
 		int temp=arr[i];
 		arr[i]=arr[j];
 		arr[j]=temp;
 	}
+	//to produce a random permutation of 0 to n-1 numbers
 	private int[] shuffleArray(int arr[],int size){
 		if(size>1){
 		Random rand=new Random();
@@ -82,6 +85,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>{
 	return arr;
 	
 	}
+	//array of 0 to n-1 numbers
 	private int[] fillArray(){
 		int arr[]=new int[n];
 		for(int i=0;i<n;i++)
@@ -96,7 +100,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>{
 		
 
 	
-	
+	//default constructor
 	public RandomizedQueue(){
 		first=null;
 		last=first;
@@ -108,6 +112,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>{
 	public int size(){
 		return n;
 	}
+	//Adding from the end
 	public void enqueue(Item item){
 		if(item!=null){
 			
@@ -125,6 +130,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>{
 			else
 			throw new IllegalArgumentException("invalid item argument");
 	}
+	//Deleting a node randomly
 	public Item dequeue(){
 		Item item;
 		Random random = new Random(); 
@@ -137,6 +143,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>{
 		item=removeAt(re);
 		return item;
 	}
+	//Returning a node randomly
 	public Item sample(){
 		Random random = new Random(); 
 		int re=random.nextInt(n);
@@ -152,7 +159,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>{
 		int arr1[]=fillArray();
 		int arr2[]=shuffleArray(arr1,n);
 		int re=0;
-		
+		//Iterating the list based on the random number arrangment in the array
 		private Node current=find(arr2[re]);
 		public boolean hasNext(){
 			return re<n;
@@ -172,6 +179,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>{
 			throw new UnsupportedOperationException();
 		}	
 	}
+	//unit testing
 	    public static void main(String[] args){
 		RandomizedQueue<Double> r=new RandomizedQueue<Double>();
 		r.enqueue(45.9);

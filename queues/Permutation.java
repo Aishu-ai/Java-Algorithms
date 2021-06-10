@@ -10,7 +10,7 @@ public class Permutation{
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 		String s=input.readLine();
 		
-		RandomizedQueue<String> r=new RandomizedQueue<//tring content = Files.readString(filepath);
+		RandomizedQueue<String> r=new RandomizedQueue<String>();//tring content = Files.readString(filepath);
 		String use[]=s.split(" ");//splitting the string at blank spaces
 		for(String st:use)
 		r.enqueue(st);

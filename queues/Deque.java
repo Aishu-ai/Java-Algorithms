@@ -6,11 +6,13 @@ public class Deque<Item> implements Iterable<Item>{
 	private Node first;
 	private Node last;
 	private int n=0;
+	//using a doubly linked list to implement dequeue
 	private class Node{
 		Item item;
 		Node previous;
 		Node next;
-	}	
+	}
+	//default constructor
 	public Deque(){
 		first=null;
 		last=first;
@@ -22,6 +24,7 @@ public class Deque<Item> implements Iterable<Item>{
 		
 		return n;
 	}
+	//adding node at the beginning of the queue
 	public void addFirst(Item item){
 		if(item!=null){
 			
@@ -39,6 +42,7 @@ public class Deque<Item> implements Iterable<Item>{
 	else
 	throw new IllegalArgumentException("invalid item argument");
 	}
+	//adding node at the end of the queue
 	public void addLast(Item item){
 		if(item!=null){
 			
@@ -56,6 +60,7 @@ public class Deque<Item> implements Iterable<Item>{
 	else
 	throw new IllegalArgumentException("invalid item argument");
 	}
+	//removing the first node
 	public Item removeFirst(){
 		if(!isEmpty()){
 		Item item=first.item;
@@ -72,6 +77,7 @@ public class Deque<Item> implements Iterable<Item>{
 	else
 	throw new java.util.NoSuchElementException("No elements in the dequeue");
 	}
+	//removing the last node
 	public Item removeLast(){
 		if(!isEmpty()){
 		Item item=last.item;
@@ -87,7 +93,8 @@ public class Deque<Item> implements Iterable<Item>{
 	}
 	else
 	throw new java.util.NoSuchElementException("No elements in the dequeue");
-	}	
+	}
+	//iterator for iterating through the queue
 	public Iterator<Item> iterator(){
 		return new ListIterator();}
 	private class ListIterator implements Iterator<Item>{

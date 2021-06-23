@@ -2,8 +2,7 @@
 <h3>The Problem</h3>
 <p>The 8-puzzle is a sliding puzzle that is played on a 3-by-3 grid with 8 square tiles labeled 1 through 8, plus a blank square. The goal is to rearrange the tiles so
 that they are in row-major order, using as few moves as possible. You are permitted to slide tiles either horizontally or vertically into the blank square. The 
- following image link shows a sequence of moves from an initial board (left) to the goal board (right).(<a href="https://coursera.cs.princeton.edu/algs4/assignments/
- 8puzzle/4moves.png">Image Link</a>)</p></br>
+ following image link shows a sequence of moves from an initial board (left) to the goal board (right).(<a href="https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/4moves.png">Image Link</a>)</p></br>
  <h3>Solution:A* Search</h3>
  <p>A solution to the 8-puzzle problem that illustrates a general artificial intelligence methodology is known as the <b>A* search algorithm.</b>We define a search 
   node of the game to be a board, the number of moves made to reach the board, and the previous search node. First, insert the initial search node 

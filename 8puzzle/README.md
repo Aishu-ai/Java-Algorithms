@@ -12,9 +12,9 @@ that they are in row-major order, using as few moves as possible. You are permit
   the search node dequeued corresponds to the goal board. </p></br>
  <p> The efficacy of this approach hinges on the choice of priority function for a search node. We consider two priority functions: <p>
   <ul>
-    <li>The Hamming priority function is the Hamming distance of a board plus the number of moves made so far to get to the search node. Intuitively, a search node
+   <li><b>The Hamming priority function</b> is the Hamming distance of a board plus the number of moves made so far to get to the search node. Intuitively, a search node
       with a small number of tiles in the wrong position is close to the goal, and we prefer a search node if has been reached using a small number of moves. </li>
-    <li>The Manhattan priority function is the Manhattan distance of a board plus the number of moves made so far to get to the search node. </li>
+   <li><b>The Manhattan priority function</b> is the Manhattan distance of a board plus the number of moves made so far to get to the search node. </li>
   </ul>
   <p>To solve the puzzle from a given search node on the priority queue, the total number of moves we need to make (including those already made) is at least its
   priority, using either the Hamming or Manhattan priority function. Why? Consequently, when the goal board is dequeued, we have discovered not only a sequence 

@@ -4,7 +4,7 @@
 that they are in row-major order, using as few moves as possible. You are permitted to slide tiles either horizontally or vertically into the blank square. The 
  following image shows a sequence of moves from an initial board (left) to the goal board (right).
  <img src="https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/4moves.png"></p></br>
- <h3>Solution:A* Search</h3>
+ <h3>Solution: A* Search</h3>
  <p>A solution to the 8-puzzle problem that illustrates a general artificial intelligence methodology is known as the <b>A* search algorithm.</b>We define a search 
   node of the game to be a board, the number of moves made to reach the board, and the previous search node. First, insert the initial search node 
  (the initial board, 0 moves, and a null previous search node) into a priority queue. Then, delete from the priority queue the search node with the minimum priority

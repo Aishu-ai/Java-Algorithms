@@ -8,4 +8,4 @@ relationship is the is-a relationship, which connects a hyponym (more specific s
  <p> In this project, a Wordnet digraph has been built:each vertex v is an integer that represents a synset, and each directed edge v→w represents that w is a 
  hypernym of v. The WordNet digraph is a rooted DAG: it is acyclic and has one vertex—the root—that is an ancestor of every other vertex. However, it is not 
   necessarily a tree because a synset can have more than one hypernym. A small subgraph of the WordNet digraph appears below.</p></br>
-  ![alt text](https://coursera.cs.princeton.edu/algs4/assignments/wordnet/wordnet-event.png)
+ <img src="https://coursera.cs.princeton.edu/algs4/assignments/wordnet/wordnet-event.png">

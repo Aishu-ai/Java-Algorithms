@@ -1,5 +1,5 @@
 <h1>WORDNET</h1>
-<p>WordNet is a semantic lexicon for the English language that computational linguists and cognitive scientists use extensively. For example, WordNet was a key 
+<p><b><i>WordNet</i></b> is a semantic lexicon for the English language that computational linguists and cognitive scientists use extensively. For example, WordNet was a key 
 component in IBM’s Jeopardy-playing Watson computer system. WordNet groups words into sets of synonyms called synsets. For example, { AND circuit, AND gate } is a 
 synset that represent a logical gate that fires only when all of its inputs fire. WordNet also describes semantic relationships between synsets. One such 
 relationship is the is-a relationship, which connects a hyponym (more specific synset) to a hypernym (more general synset). For example, the synset 

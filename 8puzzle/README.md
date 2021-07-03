@@ -24,8 +24,8 @@ that they are in row-major order, using as few moves as possible. You are permit
   search nodes. The root of the game tree is the initial search node; the internal nodes have already been processed; the leaf nodes are maintained in a priority 
   queue; at each step, the A* algorithm removes the node with the smallest priority from the priority queue and processes it (by adding its children to both the 
   game tree and the priority queue). </p></br>
-  <p>For example, the following image link illustrates the game tree after each of the first three steps of running the A* search algorithm on a 3-by-3 puzzle using 
-  the Manhattan priority function. <a href="https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/game-tree.png">Image Link</a></p>
+  <p>For example, the following image illustrates the game tree after each of the first three steps of running the A* search algorithm on a 3-by-3 puzzle using 
+  the Manhattan priority function. <img src="https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/game-tree.png"></p>
   <h4>Two Optimizations</h4>
   <ul>
   <li><i>The critical optimization.</i> A* search has one annoying feature: search nodes corresponding to the same board are enqueued on the priority queue many

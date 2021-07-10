@@ -10,4 +10,12 @@
   </ul>
   A valid example is given below:</br>
  <center><img src="https://coursera.cs.princeton.edu/algs4/assignments/boggle/pines.png"></center>
+ <h5>The Qu Special Case</h5>
+ <p>In the English language, the letter Q is almost always followed by the letter U. Consequently, the side of one die is printed with the two-letter sequence Qu instead of Q (and this two-letter sequence must be used together when forming words). When scoring, Qu counts as two letters; for example, the word QuEUE scores as a 5-letter word even though it is formed by following a sequence of only 4 dice.</p>
+ <h5>Dictionaries Used</h5>
+ <p>Two dictionaries used are included as .txt files. "dictionary-yawl.txt" is a comprehensive list of 264,061 English words (known as Yet Another Word List) that is widely used in word-game competitions. </p>
+ <h5>Solution</h5>
+ <p>TST is used to store the words in the dictionaries. Perform DFS on the board by searching for valid words in the trie. On an average, it was seen that 1000 random boards could be solved per second.</p>
+
+
  

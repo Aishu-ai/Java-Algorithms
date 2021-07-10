@@ -9,4 +9,4 @@
   <li>A valid word must be in the dictionary (which typically does not contain proper nouns).</li>
   </ul>
   A valid example is given below:</br>
- <img src="https://coursera.cs.princeton.edu/algs4/assignments/boggle/pines.png">
+ <center><img src="https://coursera.cs.princeton.edu/algs4/assignments/boggle/pines.png"></center>

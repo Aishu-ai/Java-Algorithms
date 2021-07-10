@@ -54,16 +54,16 @@ public class BoggleSolver{
 	public int scoreSecured(){
 		int score=0;
 		for(String s:store){
-			if(s.length()<=4)
+			if(s.length()<=4) //1 point for length<=4
 			score+=1;
-			else if(s.length()==5)
+			else if(s.length()==5) //2 points for length=5
 			score+=2;
-			else if(s.length()==6)
+			else if(s.length()==6) //3 points for length=6
 			score+=3;
-			else if(s.length()==7)
+			else if(s.length()==7) //5 points for length=7
 			score+=5;
 			else
-			score+=11;
+			score+=11; //11 points for length>=8
 		}
 		return score;
 	}

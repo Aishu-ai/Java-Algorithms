@@ -24,15 +24,17 @@ a random n-by-n grid almost always percolates. No mathematical solution for dete
 <h3 align="center">MONTE CARLO SIMULATION</h3>
 
 <p>To estimate the percolation threshold, consider the following computational experiment:</p>
+<ul>
+<li>Initialize all sites to be blocked.<li>
 
-*Initialize all sites to be blocked.
-
-*Repeat the following until the system percolates
-  
-    *Choose a site uniformly at random among all blocked sites.</li>
-    *Open the site.
+<li>Repeat the following until the system percolates.
+  <ul>
+    <li>Choose a site uniformly at random among all blocked sites.</li>
+    <li>Open the site.</li>
+  </ul>
+  </li> 
     
-*The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold. 
+<li>The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold.</li> 
   
 
 

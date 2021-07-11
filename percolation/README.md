@@ -25,7 +25,7 @@ a random n-by-n grid almost always percolates. No mathematical solution for dete
 
 <p>To estimate the percolation threshold, consider the following computational experiment:</p>
 <ul>
-<li>Initialize all sites to be blocked.<li>
+<li>Initialize all sites to be blocked.</li>
 
 <li>Repeat the following until the system percolates.
   <ul>

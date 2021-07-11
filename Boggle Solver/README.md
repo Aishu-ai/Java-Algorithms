@@ -16,7 +16,9 @@
  <h5>Dictionaries Used</h5>
  <p>Two dictionaries used are included as .txt files. "dictionary-yawl.txt" is a comprehensive list of 264,061 English words (known as Yet Another Word List) that is widely used in word-game competitions. </p>
  <h5>Solution</h5>
- <p>TST is used to store the words in the dictionaries. Perform DFS on the board by searching for valid words in the trie. On an average, it was seen that 1000 random boards could be solved per second.</p>
+ <p>TST is used to store the words in the dictionaries. Perform DFS on the board by searching for valid words in the trie. On an average, it was seen that 4000-5000 random 4x4 boards could be solved per second.</p>
+ <h5>Sample Output obtained for a random board</h5>
+ 
 
 
 

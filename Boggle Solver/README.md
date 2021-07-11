@@ -1,6 +1,6 @@
 
 <h1 align="center">Boggle Solver</h1>
-<h4><center>A program to play the word game Boggle</center></h4>
+<h4 align="center">A program to play the word game Boggle</h4>
 <h5>The Boggle Game</h5>
 <p>Boggle is a word game designed by Allan Turoff and distributed by Hasbro. It involves a board made up of 16 cubic dice, where each die has a letter printed on each of its 6 sides. At the beginning of the game, the 16 dice are shaken and randomly distributed into a 4-by-4 tray, with only the top sides of the dice visible. The players compete to accumulate points by building valid words from the dice, according to these rules: </p>
 <ul>

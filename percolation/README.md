@@ -10,7 +10,7 @@ In other words, a system percolates if we fill all open sites connected to the t
 to bottom, with full sites conducting. For the porous substance example, the open sites correspond to empty space through which water might flow, so that a 
 system that percolates lets water fill open sites, flowing from top to bottom.)<p> 
 
-<img src="https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolates-yes.png" width="400px" height="400px">
+<img src="https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolates-yes.png" width="600px" height="400px">
 <img src="https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolates-no.png"</br>
 
 THE PROBLEM

@@ -29,8 +29,8 @@ a random n-by-n grid almost always percolates. No mathematical solution for dete
 
 *Repeat the following until the system percolates
   
-**Choose a site uniformly at random among all blocked sites.</li>
-**Open the site.
+    *Choose a site uniformly at random among all blocked sites.</li>
+    *Open the site.
     
 *The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold. 
   

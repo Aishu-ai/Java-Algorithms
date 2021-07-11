@@ -8,7 +8,7 @@ image is a path of pixels connected from the top to the bottom with one pixel in
     <p>In image processing, pixel (x, y) refers to the pixel in column x and row y, with pixel (0, 0) at the upper left corner and pixel (W − 1, H − 1) at the bottom
       right corner.(opposite of the standard mathematical notation used in linear algebra where (i, j) refers to row i and column j and with Cartesian coordinates
       where (0, 0) is at the lower left corner.) The color of a pixel is represented in RGB space, using three integers between 0 and 255. </p></li>
-  <li><h3>EnergyCalculation</h3>
+  <li><h3>Energy Calculation</h3>
     <p>The dual-gradient energy function is implemented for this project. The dual-gradient energy function of the input image used:</p>
     <img src="energy.png">
   <p>The energy is high (white) for pixels in the image where there is a rapid color gradient (such as the boundary between the sea and sky and the boundary between the surfing Josh Hug on the left and the ocean behind him). The seam-carving technique avoids removing such high-energy pixels.</p></li>
@@ -18,7 +18,7 @@ image is a path of pixels connected from the top to the bottom with one pixel in
     <img src="with_seams.png">
   </li>
   <li><h3>Seam Removal</h3>
-    The final step is to remove from the image all of the pixels along the seam. </li>
+    The final step is to remove from the image all of the pixels along the seam. The final image obtained is shown below.<img src="compressed.png"> </li>
   </ul>
     
   

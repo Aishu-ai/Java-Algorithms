@@ -20,19 +20,24 @@ If sites are independently set to be open with probability p (and therefore bloc
 <img src="https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolation-threshold100.png" width="700px" height="400px">  
 When n is sufficiently large, there is a threshold value p* such that when p < p* a random n-by-n grid almost never percolates, and when p > p*,
 a random n-by-n grid almost always percolates. No mathematical solution for determining the percolation threshold p* has yet been derived. We estimate the threshold using the following simulation.
-************************************
-MONTE CARLO SIMULATION
-***********************************
-To estimate the percolation threshold, consider the following computational experiment:</br>
-a.Initialize all sites to be blocked.<br/>
 
-b.Repeat the following until the system percolates</br>
+<h3 align="center">MONTE CARLO SIMULATION</h3>
 
-  1.Choose a site uniformly at random among all blocked sites.</br>
+<p>To estimate the percolation threshold, consider the following computational experiment:</p>
+<ul>
+<li>Initialize all sites to be blocked.</li>
 
-  2.Open the site. </br>
+<li>Repeat the following until the system percolates</li>
+  <li>
+    <ul>
 
-c.The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold. </br>
+      <li>Choose a site uniformly at random among all blocked sites.</li>
+
+      <li>Open the site.</li>
+    </ul> 
+
+<li>The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold. </li>
+  </ul>
 
 
 

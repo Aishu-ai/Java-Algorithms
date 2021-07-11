@@ -11,7 +11,7 @@ to bottom, with full sites conducting. For the porous substance example, the ope
 system that percolates lets water fill open sites, flowing from top to bottom.)<p> 
 
 <img src="https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolates-yes.png" width="600px" height="400px">
-<img src="https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolates-no.png"</br>
+<img src="https://coursera.cs.princeton.edu/algs4/assignments/percolation/percolates-no.png" width="600px" height="400px">
 
 THE PROBLEM
 *************************************

@@ -10,3 +10,4 @@ with one pixel in each column.</p>
       where (0, 0) is at the lower left corner.) The color of a pixel is represented in RGB space, using three integers between 0 and 255. </p></li>
   <li><h3>EnergyCalculation</h3>
     <p>The dual-gradient energy function is implemented for this project. The dual-gradient energy function of the input image used:</p>
+    <img src="energy.png"></li>

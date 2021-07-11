@@ -1,5 +1,5 @@
-<html>
-<h1><center>Boggle Solver</center></h1>
+
+<h1 align="center">Boggle Solver</h1>
 <h4><center>A program to play the word game Boggle</center></h4>
 <h5>The Boggle Game</h5>
 <p>Boggle is a word game designed by Allan Turoff and distributed by Hasbro. It involves a board made up of 16 cubic dice, where each die has a letter printed on each of its 6 sides. At the beginning of the game, the 16 dice are shaken and randomly distributed into a 4-by-4 tray, with only the top sides of the dice visible. The players compete to accumulate points by building valid words from the dice, according to these rules: </p>
@@ -17,7 +17,7 @@
  <p>Two dictionaries used are included as .txt files. "dictionary-yawl.txt" is a comprehensive list of 264,061 English words (known as Yet Another Word List) that is widely used in word-game competitions. </p>
  <h5>Solution</h5>
  <p>TST is used to store the words in the dictionaries. Perform DFS on the board by searching for valid words in the trie. On an average, it was seen that 1000 random boards could be solved per second.</p>
-</html>
+
 
 
  
